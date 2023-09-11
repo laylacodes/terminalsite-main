@@ -1,0 +1,52 @@
+{
+  "name": "terminalsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cfonts": "^2.4.2",
+    "chalk": "^2.4.2",
+    "core-js": "^3.32.2",
+    "reset-css": "^4.0.1",
+    "sass": "^1.66.1",
+    "vue": "^2.6.7",
+    "vue-scrollto": "^2.13.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
+    "@vue/eslint-config-standard": "^3.0.5",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

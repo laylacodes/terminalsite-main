@@ -1,0 +1,38 @@
+$white: #F8F8F0;
+$red: #F1568E;
+$blue: #C2FFDF;
+$orange: #EA9A97;
+$purple: #C5A3FF;
+$yellow: #D5A425;
+$grey: #9893A5;
+$pink: #FFB8D1;
+
+// Default styles for all screen sizes
+a {
+  color: $purple;
+  background-color: rgba($purple, 0.1);
+  &:hover {
+    background-color: rgba($purple, 0.2);
+  }
+}
+
+.yellow { color: $yellow }
+.grey { color: $grey }
+.red { color: $red }
+.orange { color: $orange }
+.purple { color: $purple }
+.pink { color: $pink }
+.blue { color: $blue }
+
+// Media Query for Mobile Devices
+@media (max-width: 599px) {
+  // Add your mobile-specific styles here
+  // For example:
+  .app {
+    font-size: 14px; // Adjust font size for mobile
+  }
+  .app {
+    padding: 0.4rem;
+    // Add other mobile-specific styling here
+  }
+}
