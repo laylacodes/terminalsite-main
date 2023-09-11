@@ -45,26 +45,28 @@ html, body {
 /* Media Query for Mobile Devices */
 @media (max-width: 599px) {
   #app {
-    font-size: 1.10vh; /* Adjust font size for mobile */
+    font-size: 2.7vw; /* Adjust font size for mobile */
   }
 }
 @media (min-width: 950px) {
   #app {
-    font-size: 11px; /* Adjust font size for wider screens */ /* Adjust padding for wider screens */
+    font-size: 2.7vw; /* Adjust font size for wider screens */ /* Adjust padding for wider screens */
   }
 }
 
 /* Media Query for Wider Screens */
 @media (min-width: 1000px) {
   #app {
-    font-size: 14px; /* Adjust font size for wider screens */
+    font-size: 15px;
+    padding: 1rem; /* Adjust font size for wider screens */
  /* Adjust padding for wider screens */
   }
 }
   /* Minimum font size for larger screens */
   @media (min-width: 1400px) {
     #app {
-      font-size: 14px;
+      font-size: 17px;
+      padding: 1rem;
  /* Set a minimum font size for larger screens */
     }
   }

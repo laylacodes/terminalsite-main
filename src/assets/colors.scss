@@ -24,15 +24,3 @@ a {
 .pink { color: $pink }
 .blue { color: $blue }
 
-// Media Query for Mobile Devices
-@media (max-width: 599px) {
-  // Add your mobile-specific styles here
-  // For example:
-  .app {
-    font-size: 14px; // Adjust font size for mobile
-  }
-  .app {
-    padding: 0.4rem;
-    // Add other mobile-specific styling here
-  }
-}
