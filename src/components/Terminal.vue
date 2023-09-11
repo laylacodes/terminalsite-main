@@ -49,27 +49,27 @@ export default {
       this.commands.push([user, cmd])
     },
     run: function (user, cmd) {
-      if (cmd === 'advice') {
+      if (cmd === 'advice' || cmd === 'Advice') {
         return this.motd()
       } else if (cmd === 'welcome') {
         return this.welcome(user)
-      } else if (cmd === 'whoami') {
+      } else if (cmd === 'whoami' || cmd === 'Whoami') {
         return this.whoami()
-      } else if (cmd === 'ls' || cmd === 'ls -a') {
+      } else if (cmd === 'ls' || cmd === 'ls -a' || cmd === 'Ls' || cmd === 'Ls -a') {
         return this.ls(cmd)
-      } else if (cmd === 'clear') {
+      } else if (cmd === 'clear' || cmd === 'Clear') {
         return this.clear()
-      } else if (cmd === 'cat' || cmd.startsWith('cat ')) {
+      } else if (cmd === 'cat' || cmd.startsWith('cat ') || cmd === 'Cat' || cmd.startsWith('Cat ')) {
         return this.cat(cmd)
-      } else if (cmd === 'su' || cmd.startsWith('su ')) {
+      } else if (cmd === 'su' || cmd.startsWith('su ') || cmd === 'Su' || cmd === cmd.startsWith('Su ')) {
         return this.su(cmd)
-      } else if (cmd === 'help') {
+      } else if (cmd === 'help' || cmd === 'Help') {
         return this.help()
-      } else if (cmd === 'email') {
+      } else if (cmd === 'email' || cmd === 'Email') {
         return this.email()
       } else if (cmd === 'credits') {
         return this.credits()
-      } else if (cmd === 'cute') {
+      } else if (cmd === 'cute' || cmd === 'Cute') {
         return this.cute()
       } else if (cmd !== '') {
         return this.nope(cmd)
@@ -144,10 +144,10 @@ export default {
         return [
           '{',
           `   <i class="purple">frontEnd</i>: [ '<i class="blue">javascript</i>', '<i class="blue">vuejs</i>', '<i class="blue">typescript</i>', '<i class="blue">react</i>', '<i class="blue">sass</i>' ],`,
-          `   <i class="purple">backEnd</i>: [ '<i class="blue">python</i>', '<i class="blue">java</i>', '<i class="blue">node.js</i>', '<i class="blue">c#</i>' ],`,
-          `   <i class="purple">tools</i>: [ '<i class="blue">npm</i>', '<i class="blue">webpack</i>', '<i class="blue">git</i>', '<i class="blue">pandas</i>', '<i class="blue">matplotlib</i>' ],`,
+          `   <i class="purple">backEnd</i>: [ '<i class="blue">python</i>', '<i class="blue">java</i>', '<i class="blue">node.js</i>', '<i class="blue">sql</i>' ],`,
+          `   <i class="purple">tools</i>: [ '<i class="blue">npm</i>', '<i class="blue">oracle db</i>', '<i class="blue">git</i>', '<i class="blue">pandas</i>', '<i class="blue">matplotlib</i>' ],`,
           `   <i class="purple">design</i>: [ '<i class="blue">figma</i>' ],`,
-          `   <i class="purple">misc</i>: [ '<i class="blue">jsx</i>', '<i class="blue">tsx/swift</i>' ]`,
+          `   <i class="purple">misc</i>: [ '<i class="blue">jsx</i>', '<i class="blue">tsx</i>' ]`,
           '}'
         ]
       } else if (cmd.includes('contact.md')) {
