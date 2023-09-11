@@ -105,7 +105,6 @@ export default {
         ]
       }
     },
-    // WHO AM I
     whoami: function () {
       return [
         '',
