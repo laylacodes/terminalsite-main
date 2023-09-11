@@ -9,7 +9,6 @@ It uses basic Linux commands like: ls, whoami, cat, clear, and a few commands of
 
 ##### Credits
 
-- [adviceslip.com](http://adviceslip.com) for the advice of the day message
 - [cataas.com](https://cataas.com) for the random cat pictures
 - shout out to everyone for the recommendations under [this tweet](https://twitter.com/pilatesdev/status/1700290431064367423)
 
