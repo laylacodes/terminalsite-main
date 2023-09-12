@@ -61,7 +61,7 @@ export default {
         return this.clear()
       } else if (cmd === 'cat' || cmd.startsWith('cat ') || cmd === 'Cat' || cmd.startsWith('Cat ')) {
         return this.cat(cmd)
-      } else if (cmd === 'su' || cmd.startsWith('su ') || cmd === 'Su' || cmd === cmd.startsWith('Su ')) {
+      } else if (cmd === 'su' || cmd.startsWith('su ')) {
         return this.su(cmd)
       } else if (cmd === 'help' || cmd === 'Help') {
         return this.help()
