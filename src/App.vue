@@ -57,7 +57,7 @@ html, body {
 /* Media Query for Wider Screens */
 @media (min-width: 1000px) {
   #app {
-    font-size: 15px;
+    font-size: 14px;
     padding: 1rem; /* Adjust font size for wider screens */
  /* Adjust padding for wider screens */
   }
@@ -65,7 +65,7 @@ html, body {
   /* Minimum font size for larger screens */
   @media (min-width: 1400px) {
     #app {
-      font-size: 17px;
+      font-size: 15px;
       padding: 1rem;
  /* Set a minimum font size for larger screens */
     }

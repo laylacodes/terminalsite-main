@@ -111,13 +111,12 @@ export default {
         `Welcome to my humble abode, <i class="user">${this.user}</i>, I'm @pilatesdev or <i class="blue">Layla</i>.`,
         'I\'m a full-time software engineer based in Austin, Texas, working at <i class="blue">Oracle</i> 🤠',
         ' ',
-        'I spent two Summers interning at <i class="blue">Oracle</i> as a Software Engineer Intern in Summer 2022 and Summer 2023, before joining <i class="blue">Oracle</i> full-time in September 2023!',
+        'I spent two Summers at <i class="blue">Oracle</i> as a Software Engineer Intern in Summer 2022 and Summer 2023, before joining <i class="blue">Oracle</i> full-time as a Software Engineer September 2023!',
         'I\'m extremely passionate about crafting user-friendly tools and interfaces, making technology accessible and enjoyable for everyone 🥰',
         'Off-duty, you\'ll find me writing, reading, going to Pilates, and cherishing time with my husband, alongside our furry family of 4 dogs and 3 cats.',
         ' ',
         'Connect with me on <a href="https://twitter.com/pilatesdev" target="_blank">twitter</a> or <a href="https://linkedin.com/laylacodes" target="_blank">linkedin</a>.',
-        'Or type <i class="yellow">email</i> for my email.',
-        ' '
+        'Or type <i class="yellow">email</i> for my email.'
       ]
     },
     ls: function (cmd) {
@@ -204,28 +203,28 @@ export default {
         '<i class="yellow">ls</i> \t\t <i class="grey">show files in directory</i>',
         '<i class="yellow">whoami</i> \t\t <i class="grey">learn more about me</i>',
         '<i class="yellow">cat</i> <i class="light">FILENAME</i> \t <i class="grey">show filename content</i>',
-        '<i class="yellow">cute</i> \t\t <i class="grey">get random cat pics</i>',
+        // '<i class="yellow">cute</i> \t\t <i class="grey">get random cat pics</i>',
         '<i class="yellow">clear</i> \t\t <i class="grey">clear current screen</i>'
       ]
-    },
-    cute: function () {
-      // Create a random number to add to the URL to ensure a fresh image each time
-      const randomNumber = Math.floor(Math.random() * 2000)
-      const catImageUrl = `https://cataas.com/cat?width=200&cache=${randomNumber}`
-
-      // Push the cat image URL into the catImageUrls array
-      this.catImageUrls.push(catImageUrl)
-
-      // Scroll to the bottom of the terminal to show the latest content
-      this.$nextTick(() => {
-        // Assuming you have a ref for the active prompt (for example, 'activePrompt')
-        const activePrompt = this.$refs.activePrompt
-
-        if (activePrompt) {
-          activePrompt.scrollIntoView({ behavior: 'smooth', block: 'end' })
-        }
-      })
     }
+    // cute: function () {
+    //   // Create a random number to add to the URL to ensure a fresh image each time
+    //   const randomNumber = Math.floor(Math.random() * 2000)
+    //   const catImageUrl = `https://cataas.com/cat?width=200&cache=${randomNumber}`
+
+    //   // Push the cat image URL into the catImageUrls array
+    //   this.catImageUrls.push(catImageUrl)
+
+    //   // Scroll to the bottom of the terminal to show the latest content
+    //   this.$nextTick(() => {
+    //     // Assuming you have a ref for the active prompt (for example, 'activePrompt')
+    //     const activePrompt = this.$refs.activePrompt
+
+    //     if (activePrompt) {
+    //       activePrompt.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    //     }
+    //   })
+    // }
   }
 }
 </script>
