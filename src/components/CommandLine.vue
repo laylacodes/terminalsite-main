@@ -1,7 +1,7 @@
 <template>
   <li class="line">
     <p class="sep" v-if="cmd !== 'welcome'">
-      <span class="user">{{ user }}</span>@<span class="domain">{{ domain }}</span><span class="directory">:{{ dir }}</span> <span class="tick">➜</span>
+      <span class="user">{{ user }}</span>@<span class="domain">{{ domain }}</span><span class="directory">:{{ dir }}</span> <span class="tick">%</span>
       <small>{{ cmd }}</small>
     </p>
     <ul :class="cmd">
@@ -41,7 +41,7 @@ span { color: $purple }
 .user { color: $red }
 .tick { color: $blue; margin: 0 0.5rem; font-size: 12px }
 .domain { color: $grey }
-.directory { color: $pink }
+.directory { color: $blue }
 .light { font-weight: normal; font-style: italic; }
 .welcome { line-height: 1rem; }
 </style>

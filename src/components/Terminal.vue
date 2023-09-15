@@ -1,15 +1,10 @@
 <template>
   <div class="terminal" ref="terminal">
+    <div class="terminal" :class="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }"></div>
     <ul>
       <CommandLine v-for="(command, index) in commands" :user="command[0]" :domain="domain" :dir="dir" :cmd="command[1]"
         :key="command[1] + index" />
     </ul>
-    <!-- need to figure out bug with the cat pixxxxx -->
-    <div v-if="catImageUrls.length" class="cat-images">
-      <div v-for="(imageUrl, index) in catImageUrls" :key="index">
-        <img :src="imageUrl" :alt="'Cute Cat ' + index" />
-      </div>
-    </div>
     <Prompt :user="user" :domain="domain" :dir="dir" ref="prompt" />
 
   </div>
@@ -21,6 +16,9 @@ import Prompt from './Prompt'
 import axios from 'axios'
 
 export default {
+  props: {
+    isDarkMode: Boolean
+  }, // Define isDarkMode as a Boolean prop
   name: 'Terminal',
   components: {
     CommandLine,
@@ -34,8 +32,7 @@ export default {
       advice: '',
       commands: [
         ['root', 'welcome']
-      ],
-      catImageUrls: []
+      ]
     }
   },
   mounted: function () {
@@ -89,7 +86,7 @@ export default {
         const currentDate = new Date().toLocaleString('en-US', { timeZoneName: 'short' })
         return [
           ' ',
-          '<i class="grey" style="font-size:24px">layla.sh⋆｡°✩🌸</i> ',
+          '<i class="grey" style="font-size:26px">layla.sh⋆｡<i class="pink">°✩</i>🧋</i> ',
           ' ',
           '<i class="grey">•──────────────•°•<i class="pink">❀</i>•°•─────────────•</i>',
           // want to display the current date/time on this line below.
@@ -108,7 +105,7 @@ export default {
     whoami: function () {
       return [
         '',
-        `Welcome to my humble abode, <i class="user">${this.user}</i>, I'm @pilatesdev or <i class="blue">Layla</i>.`,
+        `Welcome to my humble abode, <i class="user">${this.user}</i>, I'm @pilatesdev or <i class="blue">Layla.</i>`,
         'I\'m a full-time software engineer based in Austin, Texas, working at <i class="blue">Oracle</i> 🤠',
         ' ',
         'I spent two Summers at <i class="blue">Oracle</i> as a Software Engineer Intern in Summer 2022 and Summer 2023, before joining <i class="blue">Oracle</i> full-time as a Software Engineer September 2023!',
@@ -130,14 +127,14 @@ export default {
       if (cmd.includes('portfolio.md')) {
         return [
           ' ',
-          '💜 <a href="https://youtube.com/pilatesdev">My Youtube</a> \t Tech content, tutorials, etc.',
-          '\t\t\t <i class="grey">1.2K subscribers</i>',
+          '🪷 <a href="https://youtube.com/pilatesdev">My Youtube</a> \t Tech content, tutorials, etc.',
+          '\t\t <i class="grey">1.2K subscribers</i>',
           ' ',
-          '💜 <a href="https://laylacodes.hashnode.dev/">My Blog</a> \t How-to articles',
-          '\t\t\t <i class="grey">50K views</i>',
+          '🪷 <a href="https://laylacodes.hashnode.dev/">My Blog</a> \t How-to articles',
+          '\t\t <i class="grey">50K views</i>',
           ' ',
-          '💜 <a href="https://blogs.oracle.com/jobsatoracle/post/layla-software-engineer-internship/">Oracle.com</a> \t Oracle featured me on their website!',
-          '\t\t\t <i class="grey"></i>'
+          '🪷 <a href="https://blogs.oracle.com/jobsatoracle/post/layla-software-engineer-internship/">Oracle.com</a> \t Oracle featured me on their website!',
+          '\t\t <i class="grey"></i>'
         ]
       } else if (cmd.includes('skills.json')) {
         return [
@@ -231,9 +228,9 @@ export default {
 <style lang="scss">
 @import '../assets/colors';
 
-.terminal {
-  background: #42395D;
-  color: $white;
-  padding: 0.85rem;
-}
+// .terminal {
+//   background: #42395D;
+//   color: $white;
+//   padding: 0.85rem;
+// }
 </style>

@@ -45,8 +45,8 @@ export default {
     border: 0;
 
     &:focus + i + .caret {
-      background-color: rgba($white, 0.8);
-      border-color: transaprent;
+      background-color: rgba($blue, 0.8);
+      border-color: $blue;
       animation: blink .75s steps(2, start) infinite;
     }
   }
