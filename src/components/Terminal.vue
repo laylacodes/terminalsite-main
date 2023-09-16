@@ -52,11 +52,11 @@ export default {
         return this.welcome(user)
       } else if (cmd === 'whoami' || cmd === 'Whoami') {
         return this.whoami()
-      } else if (cmd === 'ls' || cmd === 'ls -a' || cmd === 'Ls' || cmd === 'Ls -a') {
+      } else if (cmd === 'ls' || cmd === 'ls -a') {
         return this.ls(cmd)
       } else if (cmd === 'clear' || cmd === 'Clear') {
         return this.clear()
-      } else if (cmd === 'cat' || cmd.startsWith('cat ') || cmd === 'Cat' || cmd.startsWith('Cat ')) {
+      } else if (cmd === 'cat' || cmd.startsWith('cat ')) {
         return this.cat(cmd)
       } else if (cmd === 'su' || cmd.startsWith('su ')) {
         return this.su(cmd)
@@ -191,7 +191,7 @@ export default {
       return [`command not found: ${cmd}`]
     },
     email: function () {
-      return ['<i class="purple">laylacodez</i> {at} <i class="purple">gmail</i> {dot} <i class="purple">com</i>']
+      return ['<i class="purple">layla</i> {at} <i class="purple">lay</i> {dot} <i class="purple">codes</i>']
     },
     help: function () {
       return [
