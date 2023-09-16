@@ -94,7 +94,7 @@ export default {
           ' ',
           '<i class="blue">{{ greetings }}</i> ',
           ' ',
-          'I\'m <i class="blue">Layla Massey</i>, a software engineer<i class="blue">/</i>content creator',
+          'I\'m <i class="blue">Layla</i>, a software engineer<i class="blue">/</i>content creator',
           ' ',
           'Type <i class="yellow">`help`</i> to get a list of commands',
           ' ',
