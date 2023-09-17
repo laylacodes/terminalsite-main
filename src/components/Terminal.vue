@@ -201,7 +201,7 @@ export default {
         '<i class="yellow">whoami</i> \t\t <i class="grey">learn more about me</i>',
         '<i class="yellow">cat</i> <i class="light">FILENAME</i> \t <i class="grey">show filename content</i>',
         // '<i class="yellow">cute</i> \t\t <i class="grey">get random cat pics</i>',
-        '<i class="yellow">clear</i> \t\t <i class="grey">clear current screen</i>'
+        //'<i class="yellow">clear</i> \t\t <i class="grey">clear current screen</i>'
       ]
     }
     // cute: function () {
