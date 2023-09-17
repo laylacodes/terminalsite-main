@@ -1,7 +1,7 @@
 <template>
   <div class="prompt">
     <span class="user">{{ user }}</span>@<span class="domain">{{ domain }}</span><span class="directory">:{{ dir }}</span> <span class="tick">%</span>
-    <input ref="prompt" v-model="cmd" v-on:keyup.enter="submit()">
+    <input ref="prompt" v-model="cmd" v-on:keyup.enter="submit()" autocapitalize="none">
     <i>{{ cmd }}</i>
     <span class="caret"></span>
   </div>
