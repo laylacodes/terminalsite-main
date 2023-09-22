@@ -150,7 +150,7 @@ export default {
         return [
           '<a href="https://twitter.com/pilatesdev" target="_blank">pilatesdev @ twitter</a>',
           ' ',
-          '<a href="https://linkedin.com/laylacodes" target="_blank">layla massey @ linkedin</a>',
+          '<a href="https://www.linkedin.com/in/laylacodes/" target="_blank">layla massey @ linkedin</a>',
           ' ',
           '<a href="https://instagram.com/pilatesdev" target="_blank">pilatesdev @ instagram</a>',
           ' ',
