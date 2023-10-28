@@ -127,7 +127,7 @@ export default {
       if (cmd.includes('portfolio.md')) {
         return [
           ' ',
-          '🪷 <a href="https://youtube.com/pilatesdev">My Youtube</a> \t Tech content, tutorials, etc.',
+          '🪷 <a href="https://www.youtube.com/channel/UCHxeX6ap5owkHny6MSyIGig">My Youtube</a> \t Tech content, tutorials, etc.',
           '\t\t <i class="grey">1.2K subscribers</i>',
           ' ',
           '🪷 <a href="https://laylacodes.hashnode.dev/">My Blog</a> \t How-to articles',
