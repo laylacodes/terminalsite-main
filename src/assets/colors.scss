@@ -1,30 +1,39 @@
 $white: #F8F8F0;
-$red: #F1568E;
-$blue: #85BEFD;
-$orange: #EA9A97;
-$purple: #C5A3FF;
-$yellow: #D5A425;
-$grey: #9893A5;
-$pink: #FFB8D1;
+$red: #e78284;
+$blue: #8aadf4;
+$orange: #ef9f76;
+$purple: #babbf1;
+$yellow: #e5c890;
+$grey: #5c5f77;
+$pink: #dc8a78;
+$links: #f2d5cf;
+$green: #a6d189;
+$teal: #81c8be;
 
 // Default styles for all screen sizes
+
+//links
 a {
-  color: $purple;
-  background-color: rgba($purple, 0.1);
+  color: $links;
+  background-color: rgba($links, 0.1);
   &:hover {
-    background-color: rgba($purple, 0.2);
+    background-color: rgba($links, 0.2);
   }
+  padding: 2px;
 }
 
+
 .yellow { color: $yellow }
+.green {color: $green }
+.teal { color: $teal }
 .grey { color: $grey }
 .red { color: $red }
 .orange { color: $orange }
 .purple { color: $purple }
 .pink { color: $pink }
 .blue { color: $blue }
+.links { color: $links }
 
-/* Styles for the toggle button */
 /* Styles for the toggle button */
 .switch {
   position: absolute;
@@ -94,4 +103,24 @@ a {
 /* Move the round thumb on click */
 .switch input:checked + .slider:before {
   transform: translateX(26px); /* Move it to the right */
+}
+
+.typewriter span {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+  animation: typing 3s steps(13, end), blink-caret 1s step-end infinite;
+  border-right: 3px solid transparent;
+  padding: 10px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: gray; }
 }

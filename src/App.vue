@@ -7,7 +7,6 @@
         <span class="slider round"></span>
       </label>
     </div>
-    
     <Terminal ref="terminal" :is-dark-mode="isDarkMode" />
   </div>
 </template>
@@ -73,7 +72,7 @@ body {
 /* Media Query for Wider Screens */
 @media (min-width: 1000px) {
   #app {
-    font-size: 13px;
+    font-size: 16px;
     padding: 1rem;
   }
 }
@@ -81,7 +80,7 @@ body {
 /* Minimum font size for larger screens */
 @media (min-width: 1400px) {
   #app {
-    font-size: 14px;
+    font-size: 16px;
     padding: 1rem;
   }
 }
@@ -93,13 +92,13 @@ body {
 }
 
 .dark-mode  {
-  background: #42395D !important;
-  color: white;
+  background: #303446 !important;
+  color: #c6d0f5;
 }
 
 .light-mode  {
-  background: #E8E8E8!important;
-  color: #26272D;
+  background: smoke-gray !important;
+  color: #4c4f69;
 }
 
 .terminal {
@@ -107,6 +106,6 @@ body {
   color: var(--text-color);
   min-height: 100vh; /* Make the terminal at least 100% viewport height */
   overflow: auto; /* Enable scrolling if content exceeds the viewport */
-  padding: 0.85rem; /* Add padding as needed */
+  padding: 1rem; /* Add padding as needed */
 }
 </style>

@@ -32,16 +32,17 @@ export default {
   a {
     text-decoration: none;
     padding: 0 2px;
+    margin: 2px;
   }
 }
 .sep { margin: 0.5rem 0 }
 .ascii { color: $grey }
 span { color: $purple }
 .command { color: $yellow }
-.user { color: $red }
-.tick { color: $blue; margin: 0 0.5rem; font-size: 12px }
-.domain { color: $grey }
-.directory { color: $blue }
+.user { color: $teal }
+.tick { color: $teal; margin: 0 0.5rem; font-size: 12px }
+.domain { color: $teal }
+.directory { color: $teal }
 .light { font-weight: normal; font-style: italic; }
-.welcome { line-height: 1rem; }
+.welcome { line-height: 20px; }
 </style>

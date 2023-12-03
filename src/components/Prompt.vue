@@ -37,7 +37,7 @@ export default {
 @import '../assets/colors';
 
 .prompt {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   input {
     width: 0;
     opacity: 0;
@@ -45,8 +45,8 @@ export default {
     border: 0;
 
     &:focus + i + .caret {
-      background-color: rgba($blue, 0.8);
-      border-color: $blue;
+      background-color: rgba($links, 0.8);
+      border-color: $links;
       animation: blink .75s steps(2, start) infinite;
     }
   }
