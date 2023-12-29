@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/blog/:path*",
+        "destination": "https://starter-4oenczx2c-laylacodes.vercel.app/:path*"
+      },
+      {
+        "source": "/blog",
+        "destination": "https://starter-4oenczx2c-laylacodes.vercel.app"
+      }
+    ]
+  }
+  
