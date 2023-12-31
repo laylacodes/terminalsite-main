@@ -2,11 +2,11 @@
 	"rewrites": [
 		{
 			"source": "/blog",
-			"destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog"
+			"destination": "https://starter-kit-gold.vercel.app/blog"
 		},
 		{
 			"source": "/blog/:path*",
-			"destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog/:path*"
+			"destination": "https://starter-kit-gold.vercel.app/blog/:path*"
 		}
 	]
 }
