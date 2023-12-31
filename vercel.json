@@ -1,13 +1,12 @@
 {
-    "rewrites": [
-      {
-        "source": "/blog/:path*",
-        "destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog/:path*"
-      },
-      {
-        "source": "/blog",
-        "destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog"
-      }
-    ]
-  }
-  
+	"rewrites": [
+		{
+			"source": "/blog",
+			"destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog"
+		},
+		{
+			"source": "/blog/:path*",
+			"destination": "https://starter-2ppn1dbmp-laylacodes.vercel.app/blog/:path*"
+		}
+	]
+}
