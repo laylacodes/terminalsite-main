@@ -104,7 +104,7 @@ Whether it's through my day job, my social media, or just everyday adventures, I
           ' ',
           '<a href="https://twitter.com/pilatesdev" target="_blank">twitter</a>',
           '<a href="https://linkedin.com/in/laylamassey/">linkedin</a>',
-          '<a href="https://laylacodes.hashnode.dev/">blog</a>',
+          '<a href="https://starter-kit-gold.vercel.app/blog/">blog</a>',
           '<a href="https://www.goodreads.com/user/show/173212130-layla">books im reading currently</a>',
           //<router-link to="/blog">blog</router-link>,
           '<a href="https://instagram.com/pilatesdev" target="_blank">instagram</a>',
